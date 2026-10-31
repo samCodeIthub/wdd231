@@ -12,7 +12,7 @@ navLinks.forEach(link => {
 
 // Course filtering
 const filterButtons = document.querySelectorAll(".filter-btn");
-const courses = document.querySelectorAll(".course section");
+const courses = document.querySelectorAll(".course-item");
 
 filterButtons.forEach(button => {
     button.addEventListener("click", function () {

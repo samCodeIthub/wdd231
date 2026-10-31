@@ -4,28 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timbuktu Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/index.css">
 
+    <title>Timbuktu Chamber of Commerce</title>
+    <meta name="description"
+        content="Explore the Timbuktu Chamber of Commerce website to discover business opportunities, community initiatives, and ways to connect with local businesses.">
+    <meta name="author" content="Samuel Motey Howard">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/indexmobile.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
+
     <header>
         <nav>
             <div class="nav-header">
                 <div class="logo">
-                    <img src="images/newlogo.jpg" alt="logo">
+                    <img src="images/newlogo.jpg" alt="Timbuktu Chamber of Commerce logo">
                     <p>Timbuktu Chamber of Commerce</p>
                 </div>
-        
-                <!-- Hamburger button -->
+
                 <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </div>
-        
+
             <div class="directory" id="directory">
                 <ul>
                     <li><a href="index.html" class="nav-link active">Home</a></li>
@@ -34,114 +48,99 @@
                 </ul>
             </div>
         </nav>
-
     </header>
-<br>
+
     <main>
-        <section class="container">
+        <div class="container">
             <h1>Home</h1>
-            
+
             <div class="box-container">
+
                 <section class="box">
                     <div class="box-title">
                         <h2>About Me</h2>
                     </div>
-                    <br>
-                    <span>
-                        <p>I am a Computer Science graduate with a passion for technology, web development, and problem-solving. I enjoy learning
-                        new skills and creating solutions that make everyday tasks easier. I have experience in administration, data management,
-                        and website development, with skills in HTML, CSS, JavaScript, and Python. I am always eager to grow, take on new
-                        challenges, and use technology to make a positive impact.</p>
-                    </span>
+                    <p>I am a Computer Science graduate with a passion for technology, web development, and
+                        problem-solving. I enjoy learning new skills and creating solutions that make everyday tasks
+                        easier. I have experience in administration, data management, and website development, with
+                        skills in HTML, CSS, JavaScript, and Python. I am always eager to grow, take on new challenges,
+                        and use technology to make a positive impact.</p>
                 </section>
-
 
                 <section class="box">
                     <div class="box-title">
                         <h2>Student Photo</h2>
                     </div>
-
                     <div class="student-image">
-                        <img src="images/unnamed.jpg" alt="student-image">
+                        <img src="images/unnamed.jpg" alt="Portrait of Samuel Motey Howard">
                     </div>
                 </section>
 
-
                 <section class="box box3">
                     <div class="box-title">
-                        <h2>Web Certificate Course</h2>
+                        <h2>Web Certificate Courses</h2>
                     </div>
-                    <br>
+
                     <div class="course-container">
-                    
                         <div class="course-button">
                             <button class="filter-btn active" data-filter="all">All</button>
                             <button class="filter-btn" data-filter="CSE">CSE</button>
                             <button class="filter-btn" data-filter="WDD">WDD</button>
                         </div>
-                    
-                        <br>
-                    
-                        <div class="course">
-                            <section data-category="CSE">
-                                <p>CSE 110</p>
-                            </section>
-                    
-                            <section data-category="CSE">
-                                <p>CSE 111</p>
-                            </section>
-                    
-                            <section data-category="WDD">
-                                <p>WDD 130</p>
-                            </section>
-                    
-                            <section data-category="WDD">
-                                <p>WDD 131</p>
-                            </section>
-                    
-                            <section data-category="CSE">
-                                <p>CSE 212</p>
-                            </section>
-                    
-                            <section data-category="WDD">
-                                <p>WDD 330</p>
-                            </section>
-                        </div>
-                    
-                    </div>
 
+                        <div class="course">
+                            <div class="course-item" data-category="CSE">
+                                <p>CSE 110</p>
+                            </div>
+                            <div class="course-item" data-category="CSE">
+                                <p>CSE 111</p>
+                            </div>
+                            <div class="course-item" data-category="WDD">
+                                <p>WDD 130</p>
+                            </div>
+                            <div class="course-item" data-category="WDD">
+                                <p>WDD 131</p>
+                            </div>
+                            <div class="course-item" data-category="CSE">
+                                <p>CSE 212</p>
+                            </div>
+                            <div class="course-item" data-category="WDD">
+                                <p>WDD 330</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
+
             </div>
 
-            <section class="links-container">
+            <div class="links-container">
                 <div class="link-div">
-                    <p>The total credit for the course listed above is 12</p>
+                    <p>The total credits for courses listed above is 12</p>
+
                     <div class="social-media">
-                        <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="linked-in"></a>
-                        <a href="https://github.com/samCodeIthub"><img src="images/github.svg" alt="github"></a>
-                        <a href="https://x.com/h31136"><img src="images/twitter.svg" alt="twitter-x"></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="images/linkedin.svg" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/samCodeIthub" target="_blank" rel="noopener noreferrer">
+                            <img src="images/github.svg" alt="GitHub">
+                        </a>
+                        <a href="https://x.com/h31136" target="_blank" rel="noopener noreferrer">
+                            <img src="images/twitter.svg" alt="X">
+                        </a>
                     </div>
                 </div>
-            </section>
-        </section>
+            </div>
 
-        
+        </div>
     </main>
 
     <footer>
         <section>
-            <p>
-                © <span id="current-year"></span> • Samuel Motey Howard • Winneba, Ghana
-            </p>
-    
-            <p>
-                Last Modification: <span id="last-modified"></span>
-            </p>
+            <p>© <span id="current-year"></span> • Samuel Motey Howard • Winneba, Ghana</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
         </section>
     </footer>
 
-    <script src="scripts/index.js"></script>
 </body>
-
 
 </html>

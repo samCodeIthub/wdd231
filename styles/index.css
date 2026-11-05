@@ -141,8 +141,9 @@ main {
 }
 
 .box>p {
-    margin: 10px;
-    line-height: 25px;
+    padding: 15px;
+    line-height: 1.6;
+    margin: 0;
 }
 
 
@@ -168,16 +169,15 @@ main {
 
 .course-container {
     width: 95%;
-    height: 160px;
     margin: 0 auto;
 }
 
 .course-button {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    height: 30px;
-    margin-top: 20px;
+    height: 35px;
+    margin-top: 15px;
 }
 
 .course-button button {
@@ -199,9 +199,9 @@ main {
 
 .course {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .course-item {
@@ -239,14 +239,18 @@ main {
     font-size: 20px;
 }
 
+
 .social-media {
-    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .social-media img {
-    width: 70px;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 

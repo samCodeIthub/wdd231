@@ -109,8 +109,13 @@
 
     /* Stack the boxes vertically */
 
-    .box-container {
+    /* .box-container {
         display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    } */
+
+    .box-container {
         grid-template-columns: 1fr;
         gap: 15px;
     }
@@ -127,9 +132,10 @@
         min-height: 250px;
     }
 
-    .box span p {
-        margin: 10px;
-        line-height: 1.4;
+    .box>p {
+        padding: 12px;
+        margin: 0;
+        line-height: 1.5;
         font-size: 15px;
     }
 

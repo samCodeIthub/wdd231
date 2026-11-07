@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Winneba Chamber of Commerce and Industry business directory. Find grocery stores, fashion businesses, hardware shops, and other local businesses in Winneba, Ghana.">
+  <meta name="author" content="Samuel Motey Howard">
+  <meta name="theme-color" content="#08264b">
+
+  <meta property="og:title" content="WCCI | Business Directory">
+  <meta property="og:description" content="Discover and connect with businesses in Winneba, Ghana through the Winneba Chamber of Commerce and Industry directory.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://samcodeithub.github.io/wdd231/chamber/directory.html">
+  <meta property="og:image" content="https://samcodeithub.github.io/wdd231/chamber/images/wcci.webp">
+  <meta property="og:image:alt" content="Winneba Chamber of Commerce and Industry logo">
+
+  <title>Business Directory | Winneba Chamber of Commerce and Industry</title>
+  <link rel="icon" href="images/wcci.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="directory.html" aria-label="WCCI home">
+        <img src="images/wcci.webp" alt="Winneba Chamber of Commerce and Industry logo">
+        <span>Winneba Chamber of<br><strong>Commerce &amp; Industry</strong></span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-main">
+    <section class="page-heading" aria-labelledby="page-title">
+      <p class="eyebrow">Connect local. Grow together.</p>
+      <h1 id="page-title">Business Directory</h1>
+      <p class="page-intro">Discover businesses and services serving Winneba and the surrounding communities.</p>
+    </section>
+
+    <section class="directory-tools" aria-label="Business directory filters">
+      <div class="search-control">
+        <label for="business-search">Search businesses</label>
+        <input type="search" id="business-search" placeholder="Search by business name or service...">
+      </div>
+
+      <div class="filter-control">
+        <label for="category-filter">Business category</label>
+        <select id="category-filter">
+          <option value="all">All categories</option>
+          <option value="Groceries">Groceries</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Hardware">Hardware</option>
+          <option value="Food">Food &amp; Restaurants</option>
+          <option value="Services">Professional Services</option>
+        </select>
+      </div>
+
+      <div class="filter-control">
+        <label for="age-filter">Business age</label>
+        <select id="age-filter">
+          <option value="all">New and established</option>
+          <option value="new">New businesses</option>
+          <option value="established">Established businesses</option>
+        </select>
+      </div>
+
+      <div class="view-control" aria-label="Choose directory layout">
+        <span class="control-label">Display</span>
+        <div class="view-buttons">
+          <button type="button" id="grid-view" class="view-button active" aria-pressed="true">
+            <span aria-hidden="true">▦</span> Grid
+          </button>
+          <button type="button" id="list-view" class="view-button" aria-pressed="false">
+            <span aria-hidden="true">☷</span> List
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="results-heading">
+      <h2>Our Members</h2>
+      <p id="results-count" aria-live="polite">Loading businesses...</p>
+    </div>
+
+    <section id="business-list" class="business-list grid-view" aria-label="Chamber member businesses">
+      <p class="loading-message">Loading member businesses...</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <a class="footer-brand" href="directory.html">Winneba Chamber of Commerce and Industry</a>
+        <p>Winneba, Central Region, Ghana</p>
+        <p>Contact: Add the chamber's official phone number and email here.</p>
+      </div>
+      <div class="footer-course">
+        <p><strong>Samuel Motey Howard</strong></p>
+        <p>WDD 231 Class Project</p>
+        <p>© <span id="current-year"></span> WCCI</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

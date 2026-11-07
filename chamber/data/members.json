@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Merry King Mall",
+    "tagline": "Fresh groceries for every home",
+    "category": "Groceries",
+    "age": "established",
+    "address": "Winneba Market",
+    "phone": "+233 20 000 0101",
+    "website": "https://example.com",
+    "image": "merryking.webp",
+    "membershipLevel": 3,
+    "description": "A sample grocery business offering everyday food items and household essentials."
+  },
+  {
+    "name": "JOBEQ Boutique",
+    "tagline": "Style for every occasion",
+    "category": "Fashion",
+    "age": "new",
+    "address": "Opposite Gloriaka Hotel",
+    "phone": "+233 20 000 0102",
+    "website": "https://example.com",
+    "image": "jobeq.webp",
+    "membershipLevel": 2,
+    "description": "A sample fashion shop featuring clothing, accessories, and local designs."
+  },
+  {
+    "name": "Charley's Ventures",
+    "tagline": "Building supplies you can rely on",
+    "category": "Hardware",
+    "age": "established",
+    "address": "Ghartey",
+    "phone": "+233 20 000 0103",
+    "website": "https://example.com",
+    "image": "hardware.webp",
+    "membershipLevel": 3,
+    "description": "A sample hardware supplier for tools, fittings, and construction materials."
+  },
+  {
+    "name": "Low Price Shop",
+    "tagline": "Your neighbourhood grocery stop",
+    "category": "Groceries",
+    "age": "new",
+    "address": "GUSS Mall",
+    "phone": "+233 20 000 0104",
+    "website": "https://example.com",
+    "image": "lowprice.webp",
+    "membershipLevel": 1,
+    "description": "A sample neighbourhood shop for groceries, drinks, and home essentials."
+  },
+  {
+    "name": "Cobbah Fashions",
+    "tagline": "Contemporary fashion with local flair",
+    "category": "Fashion",
+    "age": "established",
+    "address": "Pomadzie, new Winneba",
+    "phone": "+233 20 000 0105",
+    "website": "https://example.com",
+    "image": "cobbah.webp",
+    "membershipLevel": 2,
+    "description": "A sample clothing and tailoring business serving individuals and families."
+  },
+  {
+    "name": "Unity Mart",
+    "tagline": "Materials for your next project",
+    "category": "Hardware",
+    "age": "new",
+    "address": "Winneba Market opposite MTN",
+    "phone": "+233 20 000 0106",
+    "website": "https://example.com",
+    "image": "unitymart.webp",
+    "membershipLevel": 1,
+    "description": "A sample supplier of basic building materials, paint, and plumbing items."
+  },
+  {
+    "name": "Bantama Foods",
+    "tagline": "Good food and a warm welcome",
+    "category": "Food",
+    "age": "established",
+    "address": "Opposite Presbitarian School",
+    "phone": "+233 20 000 0107",
+    "website": "https://example.com",
+    "image": "bantama.webp",
+    "membershipLevel": 2,
+    "description": "A sample local café serving meals, snacks, and refreshments."
+  },
+  {
+    "name": "Leon Art Shop",
+    "tagline": "Art shop for everyone",
+    "category": "Services",
+    "age": "new",
+    "address": "UEW Small Gate",
+    "phone": "+233 20 000 0108",
+    "website": "https://example.com",
+    "image": "leonart.webp",
+    "membershipLevel": 1,
+    "description": "A sample business providing computer, printing, and digital support services."
+  }
+]

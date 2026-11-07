@@ -80,7 +80,7 @@ body {
   gap: 5px;
   border: 1px solid rgba(255,255,255,0.45);
   border-radius: 8px;
-  background: transparent;
+  background: #ffffff00;
   cursor: pointer;
 }
 
@@ -284,10 +284,12 @@ a:focus-visible {
 }
 
 .business-image-placeholder {
+  height: 112px;
   min-height: 112px;
   display: grid;
   place-items: center;
-  padding: 0.5rem;
+  overflow: hidden;
+  padding: 0;
   border: 1px dashed #8b9bad;
   border-radius: 8px;
   background: #edf1f5;
@@ -387,12 +389,6 @@ a:focus-visible {
 }
 
 /* Business photos loaded from members.json */
-.business-image-placeholder {
-  height: 112px;
-  overflow: hidden;
-  padding: 0;
-}
-
 .business-image {
   display: block;
   width: 100%;

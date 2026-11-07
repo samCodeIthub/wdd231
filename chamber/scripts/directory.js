@@ -151,6 +151,12 @@ menuToggle.addEventListener("click", () => {
 
 // Footer information is generated automatically.
 document.querySelector("#current-year").textContent = new Date().getFullYear();
-document.querySelector("#last-modified").textContent = document.lastModified;
+const modifiedDate = new Date(document.lastModified);
+document.querySelector("#last-modified").textContent = Number.isNaN(modifiedDate.getTime())
+  ? document.lastModified
+  : modifiedDate.toLocaleString("en-GB", {
+      day: "2-digit", month: "long", year: "numeric",
+      hour: "2-digit", minute: "2-digit"
+    });
 
 getMembers();

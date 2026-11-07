@@ -376,11 +376,18 @@ a:focus-visible {
   grid-template-columns: 1fr;
 }
 .business-list.list-view .business-card-header { min-height: auto; }
-.business-list.list-view .business-card-content { grid-template-columns: 112px minmax(0, 1fr); }
+.business-list.list-view .business-card-content {
+  grid-template-columns: 1fr;
+}
+.business-list.list-view .business-image-placeholder {
+  display: none;
+}
+.business-list.list-view .business-description {
+  padding-top: 0;
+}
 
 /* Business photos loaded from members.json */
 .business-image-placeholder {
-  min-height: 112px;
   height: 112px;
   overflow: hidden;
   padding: 0;
@@ -406,4 +413,11 @@ a:focus-visible {
 
 .business-image-placeholder.image-missing .business-image {
   display: none;
+}
+
+/* Keep long content inside the viewport on narrow screens. */
+.business-card,
+.business-card-content,
+.business-details {
+  min-width: 0;
 }

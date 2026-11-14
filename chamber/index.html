@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Connect with Winneba businesses, explore chamber events, check local weather, and discover opportunities to grow with WCCI.">
+  <meta name="author" content="Samuel Motey Howard">
+  <meta name="theme-color" content="#08264b">
+
+  <meta property="og:title" content="Winneba Chamber of Commerce and Industry | Home">
+  <meta property="og:description" content="Discover local businesses, chamber events, and opportunities to grow with Winneba's business community.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://samcodeithub.github.io/wdd231/chamber/index.html">
+  <meta property="og:image" content="https://samcodeithub.github.io/wdd231/chamber/images/wcci.webp">
+  <meta property="og:image:alt" content="Winneba Chamber of Commerce and Industry logo">
+
+  <title>Home | Winneba Chamber of Commerce and Industry</title>
+  <link rel="icon" href="images/wcci.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/config.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Winneba Chamber of Commerce and Industry home">
+        <img src="images/wcci.webp" alt="Winneba Chamber of Commerce and Industry logo">
+        <span>Winneba Chamber of<br><strong>Commerce &amp; Industry</strong></span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="home-main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="images/hero-large.webp" srcset="images/hero-small.webp 560w, images/hero-large.webp 881w" sizes="100vw" width="881" height="283" alt="Winneba coastline with palm trees, beach, and town buildings" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow">Business • Growth • Community</p>
+        <h1 id="hero-title">Welcome to the Winneba Chamber of Commerce and Industry</h1>
+        <p>Together for a stronger business community.</p>
+        <a class="cta-button" href="join.html">Join the Chamber <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <div class="home-content">
+      <div class="home-feature-grid">
+        <section class="home-panel events-panel" aria-labelledby="events-title">
+          <div class="panel-heading">
+            <span class="panel-icon" aria-hidden="true">▦</span>
+            <h2 id="events-title">Current Events</h2>
+          </div>
+          <div class="event-content">
+            <div class="event-date" role="group" aria-label="Chamber event announcement">
+              <span>WCCI</span>
+              <strong>EVENTS</strong>
+              <small>Connect • Learn • Grow</small>
+            </div>
+            <div class="event-copy">
+              <p class="event-kicker">Upcoming chamber activity</p>
+              <h3>Winneba Business Networking Meetup</h3>
+              <p>Meet local entrepreneurs, share ideas, and explore opportunities to support businesses across Winneba.</p>
+              <p class="event-note">Date and venue: To be announced</p>
+              <a class="text-link" href="join.html">Get involved <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="home-panel weather-panel" aria-labelledby="weather-title">
+          <div class="panel-heading">
+            <span class="panel-icon" aria-hidden="true">☀</span>
+            <h2 id="weather-title">Weather in Winneba</h2>
+          </div>
+          <div id="weather-current" class="weather-current" aria-live="polite">
+            <p class="loading-message">Loading current weather...</p>
+          </div>
+          <div class="forecast-wrap">
+            <h3>Three-day forecast</h3>
+            <div id="weather-forecast" class="weather-forecast" aria-live="polite">
+              <p class="loading-message">Loading forecast...</p>
+            </div>
+          </div>
+          <p id="weather-attribution" class="weather-attribution">Weather information provided by OpenWeatherMap.</p>
+        </section>
+      </div>
+
+      <section class="spotlights-section" aria-labelledby="spotlights-title">
+        <div class="section-heading-row">
+          <div>
+            <p class="eyebrow">Meet our members</p>
+            <h2 id="spotlights-title">Business Spotlights</h2>
+          </div>
+          <a class="outline-link" href="directory.html">View all members <span aria-hidden="true">→</span></a>
+        </div>
+        <div id="spotlight-list" class="spotlight-grid" aria-live="polite">
+          <p class="loading-message">Loading featured chamber members...</p>
+        </div>
+      </section>
+
+      <section class="join-banner" aria-labelledby="join-banner-title">
+        <div>
+          <p class="eyebrow">Be part of the network</p>
+          <h2 id="join-banner-title">Let’s grow Winneba’s business community together.</h2>
+          <p>Connect with other businesses, build relationships, and make your business more visible.</p>
+        </div>
+        <a class="cta-button cta-button-light" href="join.html">Become a member <span aria-hidden="true">→</span></a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <a class="footer-brand" href="index.html">Winneba Chamber of Commerce and Industry</a>
+        <p>Winneba, Central Region, Ghana</p>
+        <p>Supporting business, opportunity, and community.</p>
+      </div>
+      <div class="footer-course">
+        <p><strong>Samuel Motey Howard</strong></p>
+        <p>WDD 231 Class Project</p>
+        <p>© <span id="current-year"></span> WCCI</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

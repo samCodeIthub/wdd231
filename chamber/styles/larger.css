@@ -26,3 +26,25 @@
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
 }
+
+/* HOME PAGE: larger screens */
+@media (min-width: 700px) {
+  .hero { min-height: 390px; }
+  .hero-shade { background: linear-gradient(90deg, rgba(6, 27, 54, 0.88), rgba(6, 27, 54, 0.56) 58%, rgba(6, 27, 54, 0.08)); }
+  .hero-content { padding: 3.5rem 0; }
+  .home-feature-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: stretch; }
+  .event-content { grid-template-columns: 150px minmax(0, 1fr); align-items: center; min-height: 220px; }
+  .event-date { min-height: 160px; }
+  .weather-current { min-height: 150px; }
+  .section-heading-row { flex-direction: row; justify-content: space-between; align-items: end; }
+  .spotlight-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .join-banner { flex-direction: row; justify-content: space-between; align-items: center; padding: 2rem; }
+  .cta-button-light { flex: 0 0 auto; }
+}
+
+@media (min-width: 1050px) {
+  .hero { min-height: 420px; }
+  .spotlight-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .spotlight-card { grid-template-columns: 95px minmax(0, 1fr); }
+  .spotlight-image { width: 95px; height: 125px; }
+}
